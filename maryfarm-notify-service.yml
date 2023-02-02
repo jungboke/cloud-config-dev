@@ -11,6 +11,10 @@ eureka:
 spring:
   application:
     name: maryfarm-notify-service
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 6
   rabbitmq:
     host: 127.0.0.1
     port: 5672
