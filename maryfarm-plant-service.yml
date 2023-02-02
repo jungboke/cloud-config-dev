@@ -11,6 +11,9 @@ eureka:
 spring:
   application:
     name: maryfarm-plant-service
+  reddis:
+    host: 127.0.0.1
+    port: 6379
   rabbitmq:
     host: 127.0.0.1
     port: 5672
