@@ -31,7 +31,7 @@ spring:
             - Path=/maryfarm-user-service/**
           filters:
             - RemoveRequestHeader=Cookie
-            # - RewritePath=/maryfarm-user-service/(?<segment>.*), /$\{segment}
+            - RewritePath=/maryfarm-user-service/(?<segment>.*), /$\{segment}
         - id: maryfarm-notify-service
           uri: lb://MARYFARM-NOTIFY-SERVICE
           predicates:
