@@ -74,6 +74,22 @@ spring:
             - RemoveRequestHeader=Cookie
             - RewritePath=/maryfarm-board-service/(?<segment>.*), /$\{segment}
 
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    groups-order: DESC
+    operationsSorter: method
+    disable-swagger-default-url: true
+    display-request-duration: true
+  api-docs:
+    path: /api-docs
+  show-actuator: true
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  paths-to-match:
+    - /api/**
+
 management:
   endpoints:
     web:
