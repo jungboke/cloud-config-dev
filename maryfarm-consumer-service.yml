@@ -1,0 +1,30 @@
+server:
+  port: 8090
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name: maryfarm-consumer-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  # zipkin:
+  #   base-url: http://127.0.0.1:9411
+  #   enabled: true
+  # sleuth:
+  #   sampler:
+  #   probability: 1.0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, busrefresh, info, metrics, prometheus
