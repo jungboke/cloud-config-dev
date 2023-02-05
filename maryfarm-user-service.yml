@@ -36,7 +36,7 @@ spring:
       ddl-auto: create
   data:
     mongodb:
-      uri: mongodb://localhost:27017/maryfarm
+      uri: mongodb://localhost:27017/userdb
 
 # p6spy? ?? SQL ?? ??
 decorator:
