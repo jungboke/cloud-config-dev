@@ -34,15 +34,15 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/maryfarm
 
 # p6spy? ?? SQL ?? ??
 decorator:
   datasource:
     p6spy:
       enable-logging: true
-data:
-  mongodb:
-    uri: mongodb://localhost:27017/maryfarm
 
 # p6spy? ?? ?? ??? debug? ??
 logging:
