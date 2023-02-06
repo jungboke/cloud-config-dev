@@ -42,7 +42,7 @@ decorator:
       enable-logging: true
 data:
   mongodb:
-    uri: mongodb://localhost:27017/boarddb
+    uri: mongodb://localhost:27017/maryfarm
 
 # p6spy? ?? ?? ??? debug? ??
 logging:
