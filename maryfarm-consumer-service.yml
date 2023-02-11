@@ -25,7 +25,6 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/maryfarm
-      auto-index-creation: true
 
 management:
   endpoints:
