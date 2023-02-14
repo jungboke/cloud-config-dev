@@ -25,6 +25,13 @@ spring:
   cloud:
     gateway:
       routes:
+        - id: maryfarm-auth-service
+          uri: lb://MARYFARM-AUTH-SERVICE
+          predicates:
+            - Path=/maryfarm-auth-service/**
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/maryfarm-auth-service/(?<segment>.*), /$\{segment}
         - id: maryfarm-user-service
           uri: lb://MARYFARM-USER-SERVICE
           predicates:
